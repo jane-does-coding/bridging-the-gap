@@ -15,17 +15,17 @@ const CardsGrid = ({ cards }: any) => {
 			<div className="flex gap-2 w-full">
 				<Card className="bg-white shadow-sm rounded-[0.5rem] border-[1px] border-neutral-200/75 w-2/4 flex items-center justify-center">
 					<CardHeader className="flex-1">
-						<CardTitle className="mb-4 jura">Notifications</CardTitle>
-						<CardDescription className="jura text-[1.25rem] my-4 mb-8 pb-4">
+						<CardTitle className="mb-1 xl:mb-4 jura">Notifications</CardTitle>
+						<CardDescription className="jura text-[0.9rem] xl:text-[1.15rem] my-4 mb-8 pb-4">
 							You have 3 unread messages. Lorem, ipsum dolor sit amet
 							consectetur adipisicing elit. Repellendus facilis porro ab dolorem
 							ducimus labore? A atque provident magnam possimus!
 						</CardDescription>
-						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] mt-2">
+						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700 mt-1 xl:mt-2">
 							Explore More
 						</Button>
 					</CardHeader>
-					<CardContent className="flex-1 flex items-center justify-center pt-4">
+					<CardContent className="flex-1 flex items-center justify-center pt-2 pl-0">
 						<img
 							src="/banner.jpg"
 							className="w-full object-fit rounded-[0.5rem] h-[40vh] object-cover "
@@ -34,11 +34,11 @@ const CardsGrid = ({ cards }: any) => {
 					</CardContent>
 				</Card>
 				<Card className="bg-white shadow-sm rounded-[0.5rem] border-[1px] border-neutral-200/75 w-1/4">
-					<CardHeader>
+					<CardHeader className="px-6 pb-2">
 						<CardTitle className="jura">Notifications</CardTitle>
 						<CardDescription>You have 3 unread messages.</CardDescription>
 					</CardHeader>
-					<CardContent className="grid gap-4">
+					<CardContent className="grid gap-4 pb-4">
 						<img
 							src="/banner.jpg"
 							className="w-full aspect-[3/2] object-fit rounded-[0.5rem]"
@@ -46,17 +46,17 @@ const CardsGrid = ({ cards }: any) => {
 						/>
 					</CardContent>
 					<CardFooter>
-						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem]">
+						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700">
 							Explore More
 						</Button>
 					</CardFooter>
 				</Card>
 				<Card className="bg-white shadow-sm rounded-[0.5rem] border-[1px] border-neutral-200/75 w-1/4">
-					<CardHeader>
+					<CardHeader className="px-6 pb-2">
 						<CardTitle className="jura">Notifications</CardTitle>
 						<CardDescription>You have 3 unread messages.</CardDescription>
 					</CardHeader>
-					<CardContent className="grid gap-4">
+					<CardContent className="grid gap-4 pb-4">
 						<img
 							src="/banner.jpg"
 							className="w-full aspect-[3/2] object-fit rounded-[0.5rem]"
@@ -64,7 +64,7 @@ const CardsGrid = ({ cards }: any) => {
 						/>
 					</CardContent>
 					<CardFooter>
-						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem]">
+						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700">
 							Explore More
 						</Button>
 					</CardFooter>
@@ -72,11 +72,11 @@ const CardsGrid = ({ cards }: any) => {
 			</div>
 			<div className="flex gap-2 w-full">
 				<Card className="bg-white shadow-sm rounded-[0.5rem] border-[1px] border-neutral-200/75 w-1/4">
-					<CardHeader>
+					<CardHeader className="px-6 pb-2">
 						<CardTitle className="jura">Notifications</CardTitle>
 						<CardDescription>You have 3 unread messages.</CardDescription>
 					</CardHeader>
-					<CardContent className="grid gap-4">
+					<CardContent className="grid gap-4 pb-4">
 						<img
 							src="/banner.jpg"
 							className="w-full aspect-[3/2] object-fit rounded-[0.5rem]"
@@ -84,17 +84,17 @@ const CardsGrid = ({ cards }: any) => {
 						/>
 					</CardContent>
 					<CardFooter>
-						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem]">
+						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700">
 							Explore More
 						</Button>
 					</CardFooter>
 				</Card>
 				<Card className="bg-white shadow-sm rounded-[0.5rem] border-[1px] border-neutral-200/75 w-1/4">
-					<CardHeader>
+					<CardHeader className="px-6 pb-2">
 						<CardTitle className="jura">Notifications</CardTitle>
 						<CardDescription>You have 3 unread messages.</CardDescription>
 					</CardHeader>
-					<CardContent className="grid gap-4">
+					<CardContent className="grid gap-4 pb-4">
 						<img
 							src="/banner.jpg"
 							className="w-full aspect-[3/2] object-fit rounded-[0.5rem]"
@@ -102,24 +102,24 @@ const CardsGrid = ({ cards }: any) => {
 						/>
 					</CardContent>
 					<CardFooter>
-						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem]">
+						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700">
 							Explore More
 						</Button>
 					</CardFooter>
 				</Card>
 				<Card className="bg-white shadow-sm rounded-[0.5rem] border-[1px] border-neutral-200/75 w-2/4 flex items-center justify-center">
 					<CardHeader className="flex-1">
-						<CardTitle className="mb-4 jura">Notifications</CardTitle>
-						<CardDescription className="jura text-[1.25rem] my-4 mb-8 pb-4">
+						<CardTitle className="mb-1 xl:mb-4 jura">Notifications</CardTitle>
+						<CardDescription className="jura text-[0.9rem] xl:text-[1.15rem] my-4 mb-8 pb-4">
 							You have 3 unread messages. Lorem, ipsum dolor sit amet
 							consectetur adipisicing elit. Repellendus facilis porro ab dolorem
 							ducimus labore? A atque provident magnam possimus!
 						</CardDescription>
-						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] mt-2">
+						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700 mt-1 xl:mt-2">
 							Explore More
 						</Button>
 					</CardHeader>
-					<CardContent className="flex-1 flex items-center justify-center pt-4">
+					<CardContent className="flex-1 flex items-center justify-center pt-2">
 						<img
 							src="/banner.jpg"
 							className="w-full object-fit rounded-[0.5rem] h-[40vh] object-cover "

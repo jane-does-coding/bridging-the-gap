@@ -53,7 +53,7 @@ export default async function Home() {
 					Find Quizzes, Explanations, Tools and More
 				</h2>
 			</Marquee>
-			<h2 className="text-neutral-700 text-[10rem] sixcaps m-0 mb-[2rem] leading-[10rem] font-light mx-auto text-center mt-28">
+			<h2 className="text-neutral-700 text-[10rem] sixcaps m-0 mb-[2rem] leading-[10rem] font-light mx-auto text-center mt-16">
 				What can you do?
 			</h2>
 			<br />
@@ -61,7 +61,8 @@ export default async function Home() {
 			<div className=" my-32">
 				<Circle />
 			</div>{" "}
-			<SignOutBtn />
+			{/* 			<SignOutBtn />
+			 */}{" "}
 			<Footer />
 		</div>
 	);
