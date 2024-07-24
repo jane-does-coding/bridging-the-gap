@@ -5,8 +5,7 @@ import ThreeCards from "@/components/Landing/ThreeCards";
 import gsap from "gsap";
 import Marquee from "react-fast-marquee";
 import SplitType from "split-type";
-/* import getCurrentUser from "./actions/getCurrentUser";
- */ import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import BigText from "@/components/Landing/BigText";
 import SignOutBtn from "@/components/Landing/SignOutBtn";
 import AnimatedTextWord from "@/components/Text/AnimatedTextWord";
@@ -60,9 +59,7 @@ export default async function Home() {
 			<ThreeCards />
 			<div className=" my-32">
 				<Circle />
-			</div>{" "}
-			{/* 			<SignOutBtn />
-			 */}{" "}
+			</div>
 			<Footer />
 		</div>
 	);

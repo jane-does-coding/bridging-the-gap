@@ -13,7 +13,6 @@ const Navbar = ({ currentUser }: any) => {
 			transition={{ duration: 0.3, delay: 0.75, ease: "easeOut" }}
 		>
 			<div className="w-full flex items-center justify-center">
-				{/* ADD JURA FONT */}
 				<NavComponent currentUser={currentUser} />
 			</div>
 		</motion.div>

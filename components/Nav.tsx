@@ -13,10 +13,8 @@ import {
 	NavigationMenuTrigger,
 	navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { DrawerComponent } from "./Drawer";
 import { useRouter } from "next/navigation";
-/* import { signOut } from "next-auth/react";
- */
+
 const components: { title: string; href: string; description: string }[] = [
 	{
 		title: "BMI Calculator",
