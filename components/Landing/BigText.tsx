@@ -16,18 +16,12 @@ const BigText = () => {
 			duration: 0.1,
 		});
 	}, []);
+
 	return (
-		<div>
+		<div className="">
 			<h1
 				id="banner-text"
-				className="text-mask bg-clip-text text-transparent text-[40rem] sixcaps m-0 mb-[4rem] tracking-[-1rem] leading-[40rem] font-extrabold"
-				style={{
-					backgroundImage: "url(/banner.jpg)",
-					backgroundSize: "cover",
-					backgroundRepeat: "no-repeat",
-					backgroundPosition: "center",
-					transform: "scale(0.8, 1.1)",
-				}}
+				className="text-[27rem] xl:text-[35rem] sixcaps m-0 mb-[1rem] leading-[28rem] xl:leading-[40rem] font-extralight tracking-[-1rem] banner-text  transform scale-x-[0.7] scale-y-[1.1]"
 			>
 				STUDY BETTER
 			</h1>
