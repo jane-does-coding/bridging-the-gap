@@ -143,24 +143,6 @@ export function NavComponent({ currentUser }: any) {
 						</ul>
 					</NavigationMenuContent>
 				</NavigationMenuItem>
-				{/* {currentUser ? (
-					<NavigationMenuItem
-						onClick={() => signOut()}
-						className="jura font-normal transition-all hover:scale-[0.8] text-[1.25rem]  bg-white/0 hover:bg-white/0 cursor-pointer"
-					>
-						Logout
-					</NavigationMenuItem>
-				) : (
-					<NavigationMenuItem
-						onClick={() => router.push("/login")}
-						className="jura font-normal transition-all hover:scale-[0.8] text-[1.25rem]  bg-white/0 hover:bg-white/0 cursor-pointer"
-					>
-						Login
-					</NavigationMenuItem>
-				)} */}
-				{/* <NavigationMenuItem>
-					<DrawerComponent />
-				</NavigationMenuItem> */}
 			</NavigationMenuList>
 		</NavigationMenu>
 	);

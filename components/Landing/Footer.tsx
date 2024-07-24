@@ -25,8 +25,7 @@ const Footer = () => {
 						BodyFat calculator
 					</a>
 				</div>
-				<div className="flex flex-col gap-2">
-					{/* Heading */}
+				{/* <div className="flex flex-col gap-2">
 					<h2 className="font-bold text-[1.25rem] jura mb-4">Learn</h2>
 					<a href="" className="font-semibold jura text-[1rem]">
 						DNA, RNA
@@ -39,7 +38,6 @@ const Footer = () => {
 					</a>
 				</div>
 				<div className="flex flex-col gap-2">
-					{/* Heading */}
 					<h2 className="font-bold text-[1.25rem] jura mb-4">Tools</h2>
 					<a href="" className="font-semibold jura text-[1rem]">
 						DNA to RNA
@@ -50,7 +48,7 @@ const Footer = () => {
 					<a href="" className="font-semibold jura text-[1rem]">
 						BodyFat calculator
 					</a>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
