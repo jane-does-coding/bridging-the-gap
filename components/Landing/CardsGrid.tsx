@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
 	Card,
@@ -8,8 +9,11 @@ import {
 	CardTitle,
 } from "../ui/card";
 import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 const CardsGrid = ({ cards }: any) => {
+	const router = useRouter();
+
 	return (
 		<div className="flex flex-col gap-2 items-center justify-between mx-auto p-2">
 			<div className="flex gap-2 w-full">
@@ -28,7 +32,7 @@ const CardsGrid = ({ cards }: any) => {
 					</CardHeader>
 					<CardContent className="flex-1 flex items-center justify-center pt-2 pl-0">
 						<img
-							src="/banner.jpg"
+							src="/book.jpg"
 							className="w-full object-fit rounded-[0.5rem] h-[40vh] object-cover "
 							alt=""
 						/>
@@ -41,32 +45,38 @@ const CardsGrid = ({ cards }: any) => {
 					</CardHeader>
 					<CardContent className="grid gap-4 pb-4">
 						<img
-							src="/banner.jpg"
+							src="/prefixes.jpg"
 							className="w-full aspect-[3/2] object-fit rounded-[0.5rem]"
 							alt=""
 						/>
 					</CardContent>
 					<CardFooter>
-						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700">
-							Explore More
+						<Button
+							onClick={() => router.push("/quizzes/prefixes")}
+							className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700"
+						>
+							Take Quiz
 						</Button>
 					</CardFooter>
 				</Card>
 				<Card className="bg-white shadow-sm rounded-[0.5rem] border-[1px] border-neutral-200/75 w-1/4">
 					<CardHeader className="px-6 pb-2">
-						<CardTitle className="jura">Notifications</CardTitle>
-						<CardDescription>You have 3 unread messages.</CardDescription>
+						<CardTitle className="jura">DNA RNA</CardTitle>
+						<CardDescription>DNA RNA Quiz.</CardDescription>
 					</CardHeader>
 					<CardContent className="grid gap-4 pb-4">
 						<img
-							src="/banner.jpg"
+							src="/dna.jpg"
 							className="w-full aspect-[3/2] object-fit rounded-[0.5rem]"
 							alt=""
 						/>
 					</CardContent>
 					<CardFooter>
-						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700">
-							Explore More
+						<Button
+							onClick={() => router.push("/quizzes/dna-rna")}
+							className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700"
+						>
+							Take Quiz
 						</Button>
 					</CardFooter>
 				</Card>
@@ -74,19 +84,24 @@ const CardsGrid = ({ cards }: any) => {
 			<div className="flex gap-2 w-full">
 				<Card className="bg-white shadow-sm rounded-[0.5rem] border-[1px] border-neutral-200/75 w-1/4">
 					<CardHeader className="px-6 pb-2">
-						<CardTitle className="jura">Notifications</CardTitle>
-						<CardDescription>You have 3 unread messages.</CardDescription>
+						<CardTitle className="jura">Body Systems</CardTitle>
+						<CardDescription>
+							Test your knowledge in body systems.
+						</CardDescription>
 					</CardHeader>
 					<CardContent className="grid gap-4 pb-4">
 						<img
-							src="/banner.jpg"
+							src="/body.jpg"
 							className="w-full aspect-[3/2] object-fit rounded-[0.5rem]"
 							alt=""
 						/>
 					</CardContent>
 					<CardFooter>
-						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700">
-							Explore More
+						<Button
+							onClick={() => router.push("/quizzes/prefixes")}
+							className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700"
+						>
+							Take Quiz
 						</Button>
 					</CardFooter>
 				</Card>
@@ -122,8 +137,8 @@ const CardsGrid = ({ cards }: any) => {
 					</CardHeader>
 					<CardContent className="flex-1 flex items-center justify-center pt-2">
 						<img
-							src="/banner.jpg"
-							className="w-full object-fit rounded-[0.5rem] h-[40vh] object-cover "
+							src="/quiz-view.png"
+							className="w-full object-fit rounded-[0.5rem] h-[40vh] object-cover border-neutral-200 border-2"
 							alt=""
 						/>
 					</CardContent>

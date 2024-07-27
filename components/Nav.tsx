@@ -101,7 +101,7 @@ export function NavComponent({ currentUser }: any) {
 						</ul>
 					</NavigationMenuContent>
 				</NavigationMenuItem>
-				<NavigationMenuItem>
+				{/* 	<NavigationMenuItem>
 					<NavigationMenuTrigger
 						onClick={() => router.push("/learn")}
 						className="jura font-normal transition-all hover:scale-[0.8] text-[1.25rem]  bg-white/0 hover:bg-white/0"
@@ -121,8 +121,8 @@ export function NavComponent({ currentUser }: any) {
 							))}
 						</ul>
 					</NavigationMenuContent>
-				</NavigationMenuItem>
-				<NavigationMenuItem>
+				</NavigationMenuItem> */}
+				{/* <NavigationMenuItem>
 					<NavigationMenuTrigger
 						onClick={() => router.push("/tools")}
 						className="jura font-normal transition-all hover:scale-[0.8] text-[1.25rem]  bg-white/0 hover:bg-white/0"
@@ -142,7 +142,7 @@ export function NavComponent({ currentUser }: any) {
 							))}
 						</ul>
 					</NavigationMenuContent>
-				</NavigationMenuItem>
+				</NavigationMenuItem> */}
 			</NavigationMenuList>
 		</NavigationMenu>
 	);
