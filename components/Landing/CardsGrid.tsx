@@ -15,11 +15,12 @@ const CardsGrid = ({ cards }: any) => {
 			<div className="flex gap-2 w-full">
 				<Card className="bg-white shadow-sm rounded-[0.5rem] border-[1px] border-neutral-200/75 w-2/4 flex items-center justify-center">
 					<CardHeader className="flex-1">
-						<CardTitle className="mb-1 xl:mb-4 jura">Notifications</CardTitle>
+						<CardTitle className="mb-1 xl:mb-4 jura">
+							Discover Your Knowledge
+						</CardTitle>
 						<CardDescription className="jura text-[0.9rem] xl:text-[1.15rem] my-4 mb-8 pb-4">
-							You have 3 unread messages. Lorem, ipsum dolor sit amet
-							consectetur adipisicing elit. Repellendus facilis porro ab dolorem
-							ducimus labore? A atque provident magnam possimus!
+							Quizzy offers quizzes on medical prefixes, body systems, and DNA &
+							RNA to test and expand your knowledge. Start learning today!
 						</CardDescription>
 						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700 mt-1 xl:mt-2">
 							Explore More
@@ -35,8 +36,8 @@ const CardsGrid = ({ cards }: any) => {
 				</Card>
 				<Card className="bg-white shadow-sm rounded-[0.5rem] border-[1px] border-neutral-200/75 w-1/4">
 					<CardHeader className="px-6 pb-2">
-						<CardTitle className="jura">Notifications</CardTitle>
-						<CardDescription>You have 3 unread messages.</CardDescription>
+						<CardTitle className="jura">Medical Prefixes</CardTitle>
+						<CardDescription>Prefixes in Medical Terminology</CardDescription>
 					</CardHeader>
 					<CardContent className="grid gap-4 pb-4">
 						<img
@@ -91,8 +92,8 @@ const CardsGrid = ({ cards }: any) => {
 				</Card>
 				<Card className="bg-white shadow-sm rounded-[0.5rem] border-[1px] border-neutral-200/75 w-1/4">
 					<CardHeader className="px-6 pb-2">
-						<CardTitle className="jura">Notifications</CardTitle>
-						<CardDescription>You have 3 unread messages.</CardDescription>
+						<CardTitle className="jura">All Quizzes</CardTitle>
+						<CardDescription>View all available quizzes</CardDescription>
 					</CardHeader>
 					<CardContent className="grid gap-4 pb-4">
 						<img
@@ -109,11 +110,11 @@ const CardsGrid = ({ cards }: any) => {
 				</Card>
 				<Card className="bg-white shadow-sm rounded-[0.5rem] border-[1px] border-neutral-200/75 w-2/4 flex items-center justify-center">
 					<CardHeader className="flex-1">
-						<CardTitle className="mb-1 xl:mb-4 jura">Notifications</CardTitle>
+						<CardTitle className="mb-1 xl:mb-4 jura">Easy to Use</CardTitle>
 						<CardDescription className="jura text-[0.9rem] xl:text-[1.15rem] my-4 mb-8 pb-4">
-							You have 3 unread messages. Lorem, ipsum dolor sit amet
-							consectetur adipisicing elit. Repellendus facilis porro ab dolorem
-							ducimus labore? A atque provident magnam possimus!
+							Quizzy's user-friendly interface makes learning enjoyable. Built
+							with modern tech, it ensures a smooth experience. Explore and
+							learn with ease!
 						</CardDescription>
 						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700 mt-1 xl:mt-2">
 							Explore More

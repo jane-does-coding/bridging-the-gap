@@ -5,6 +5,7 @@ import ThreeCards from "@/components/Landing/ThreeCards";
 import Marquee from "react-fast-marquee";
 import BigText from "@/components/Landing/BigText";
 import AnimatedTextWord from "@/components/Text/AnimatedTextWord";
+import { HeroScroll } from "@/components/ImageParallax";
 
 export default async function Home() {
 	return (
@@ -52,8 +53,10 @@ export default async function Home() {
 				What can you do?
 			</h2>
 			<br />
-			<ThreeCards />
-			<div className=" my-32">
+			<HeroScroll />
+			{/* 			<ThreeCards />
+			 */}{" "}
+			<div className="mb-32 -mt-12">
 				<Circle />
 			</div>
 			<Footer />
