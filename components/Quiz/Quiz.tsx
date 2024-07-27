@@ -5,8 +5,7 @@ import { Label } from "../ui/label";
 import { useRouter } from "next/navigation";
 import { motion, useAnimation } from "framer-motion";
 import { Progress } from "../ui/progress";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import AnimatedTextWord from "../Text/AnimatedTextWord";
 
 interface Question {
@@ -52,6 +51,7 @@ const Quiz = ({
 	const [timerMinutes, setTimerMinutes] = useState(0);
 	const [timeLeft, setTimeLeft] = useState(0);
 	const [isFading, setIsFading] = useState(false);
+	const [showAnswers, setShowAnswers] = useState(false);
 
 	const [questions, setQuestions] = useState<Question[]>(
 		createShuffledQuestions(QuestionsArray, numQuestions)
@@ -150,6 +150,7 @@ const Quiz = ({
 	const handleRestartQuiz = () => {
 		setIsSubmitted(false);
 		setIsQuizStarted(false);
+		setShowAnswers(false);
 		setCurrentQuestionIndex(0);
 		setSelectedAnswers([]);
 		setScore(0);
@@ -189,7 +190,7 @@ const Quiz = ({
 
 	if (!isQuizStarted) {
 		return (
-			<div className="w-[100vw] h-screen flex items-center justify-center bg-gradient-to-b from-neutral-50 to-sky-100/75">
+			<div className="w-[100vw] min-h-screen flex items-center justify-center bg-gradient-to-b from-neutral-50 to-sky-100/75">
 				<div className="w-[45vw] min-h-[60vh] bg-white/75 border-[1px] border-neutral-200 mx-auto rounded-[1rem] flex flex-col items-center justify-center px-12">
 					<AnimatedTextWord text={title} className="jura text-[2.5rem] mb-8" />
 					<div className="mb-8 w-full">
@@ -243,28 +244,42 @@ const Quiz = ({
 
 	if (isSubmitted) {
 		return (
-			<div className="w-[100vw] h-screen flex items-center justify-center bg-gradient-to-b from-neutral-50 to-sky-100/75">
-				<div className="w-[50vw] min-h-[60vh] bg-white/75 border-[1px] border-neutral-200 mx-auto rounded-[1rem] flex flex-col items-center justify-center px-12">
+			<div
+				className={`w-[100vw] min-h-screen flex items-center justify-center bg-gradient-to-b from-neutral-50 to-sky-100/75 ${
+					showAnswers ? "pt-[10vh] pb-[5vh]" : ""
+				}`}
+			>
+				<div className="w-[70vw] min-h-[60vh] max-h-[80vh] overflow-auto bg-white/75 border-[1px] border-neutral-200 mx-auto rounded-[1rem] flex flex-col items-center justify-center px-12">
 					<h2 className="text-[1.5rem] mb-4">Quiz Completed!</h2>
 					<p className="text-[1.2rem]">
 						Your score: {score}/{questions.length}
 					</p>
-					<div className="w-full mt-4">
-						{questions.map((question, index) => (
-							<QuestionResult
-								key={index}
-								question={question.question}
-								userAnswer={selectedAnswers[index]}
-								correctAnswer={question.correctAnswer}
-							/>
-						))}
+					{showAnswers && (
+						<div className="w-full mt-4 flex flex-col items-start justify-start pt-[60vh]">
+							{questions.map((question, index) => (
+								<QuestionResult
+									key={index}
+									question={question.question}
+									userAnswer={selectedAnswers[index]}
+									correctAnswer={question.correctAnswer}
+								/>
+							))}
+						</div>
+					)}
+					<div className="w-full flex justify-between gap-4 mt-4 mb-8">
+						<button
+							onClick={() => setShowAnswers(!showAnswers)}
+							className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-full py-3 text-[1.1rem]"
+						>
+							{showAnswers ? "Hide Answers" : "View Answers"}
+						</button>
+						<button
+							onClick={handleRestartQuiz}
+							className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-full py-3 text-[1.1rem]"
+						>
+							Restart
+						</button>
 					</div>
-					<button
-						onClick={handleRestartQuiz}
-						className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-full py-3 text-[1.1rem] mt-12"
-					>
-						Restart
-					</button>
 				</div>
 			</div>
 		);
