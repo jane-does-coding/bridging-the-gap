@@ -158,6 +158,35 @@ const Quiz = ({
 
 	const router = useRouter();
 
+	const QuestionResult = ({
+		question,
+		userAnswer,
+		correctAnswer,
+	}: {
+		question: string;
+		userAnswer: string;
+		correctAnswer: string;
+	}) => {
+		const isCorrect = userAnswer === correctAnswer;
+		return (
+			<div className="w-full mb-4 p-4 border rounded-md">
+				<h3 className="text-[1.25rem]">{question}</h3>
+				<p
+					className={`text-[1rem] ${
+						isCorrect ? "text-green-600" : "text-red-600"
+					}`}
+				>
+					Your answer: {userAnswer}
+				</p>
+				{!isCorrect && (
+					<p className="text-[1rem] text-blue-600">
+						Correct answer: {correctAnswer}
+					</p>
+				)}
+			</div>
+		);
+	};
+
 	if (!isQuizStarted) {
 		return (
 			<div className="w-[100vw] h-screen flex items-center justify-center bg-gradient-to-b from-neutral-50 to-sky-100/75">
@@ -220,6 +249,16 @@ const Quiz = ({
 					<p className="text-[1.2rem]">
 						Your score: {score}/{questions.length}
 					</p>
+					<div className="w-full mt-4">
+						{questions.map((question, index) => (
+							<QuestionResult
+								key={index}
+								question={question.question}
+								userAnswer={selectedAnswers[index]}
+								correctAnswer={question.correctAnswer}
+							/>
+						))}
+					</div>
 					<button
 						onClick={handleRestartQuiz}
 						className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-full py-3 text-[1.1rem] mt-12"

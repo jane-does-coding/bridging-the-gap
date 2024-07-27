@@ -6,7 +6,7 @@
 
 ## Demo
 
-[Recipes Site - Live Demo](https://bridging-the-gap-gilt.vercel.app/)
+[Quizzy Site - Live Demo](https://bridging-the-gap-gilt.vercel.app/)
 
 ## Quizzes
 
