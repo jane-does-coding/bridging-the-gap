@@ -92,7 +92,7 @@ const CardsGrid = ({ cards }: any) => {
 					<CardContent className="grid gap-4 pb-4">
 						<img
 							src="/body.jpg"
-							className="w-full aspect-[3/2] object-fit rounded-[0.5rem]"
+							className="w-full aspect-[3/2] object-fit rounded-[0.5rem] border-neutral-100 border-2"
 							alt=""
 						/>
 					</CardContent>
@@ -112,8 +112,8 @@ const CardsGrid = ({ cards }: any) => {
 					</CardHeader>
 					<CardContent className="grid gap-4 pb-4">
 						<img
-							src="/banner.jpg"
-							className="w-full aspect-[3/2] object-fit rounded-[0.5rem]"
+							src="/quiz.jpg"
+							className="w-full aspect-[3/2] object-fit rounded-[0.5rem] border-neutral-100 border-2"
 							alt=""
 						/>
 					</CardContent>
@@ -127,9 +127,9 @@ const CardsGrid = ({ cards }: any) => {
 					<CardHeader className="flex-1">
 						<CardTitle className="mb-1 xl:mb-4 jura">Easy to Use</CardTitle>
 						<CardDescription className="jura text-[0.9rem] xl:text-[1.15rem] my-4 mb-8 pb-4">
-							Quizzy's user-friendly interface makes learning enjoyable. Built
-							with modern tech, it ensures a smooth experience. Explore and
-							learn with ease!
+							Quizzy&apos;s user-friendly interface makes learning enjoyable.
+							Built with modern tech, it ensures a smooth experience. Explore
+							and learn with ease!
 						</CardDescription>
 						<Button className="w-full bg-blue-200 hover:bg-blue-300/75 rounded-[0.5rem] text-neutral-700 mt-1 xl:mt-2">
 							Explore More
@@ -138,7 +138,7 @@ const CardsGrid = ({ cards }: any) => {
 					<CardContent className="flex-1 flex items-center justify-center pt-2">
 						<img
 							src="/quiz-view.png"
-							className="w-full object-fit rounded-[0.5rem] h-[40vh] object-cover border-neutral-200 border-2"
+							className="w-full object-fit rounded-[0.5rem] h-[40vh] object-cover border-neutral-100 border-2"
 							alt=""
 						/>
 					</CardContent>

@@ -7,19 +7,19 @@ const page = () => {
 		{
 			title: "Medical Prefixes",
 			description: "Prefixes in Medical Terminology",
-			imageUrl: "/banner.jpg",
+			imageUrl: "/prefixes.jpg",
 			link: "/quizzes/prefixes",
 		},
 		{
 			title: "Body Systems",
 			description: "Body Systems and their functions",
-			imageUrl: "/banner.jpg",
+			imageUrl: "/body.jpg",
 			link: "/quizzes/body-systems",
 		},
 		{
 			title: "DNA RNA Quiz",
 			description: "knowledge related to DNA and RNA",
-			imageUrl: "/banner.jpg",
+			imageUrl: "/dna.jpg",
 			link: "/quizzes/dna-rna",
 		},
 	];
